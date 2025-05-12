@@ -53,7 +53,7 @@ pipeline {
         }
         stage('Completed') {
             steps {
-                echo 'DOne'
+                echo 'Done'
                 
             }
         }
@@ -62,7 +62,7 @@ pipeline {
     post {
         always {
             echo 'Cleaning up...'
-            // You can clean up resources here (e.g., delete temp files, stop services, etc.)
+            
         }
         success {
             echo 'Build and deployment completed successfully!'
